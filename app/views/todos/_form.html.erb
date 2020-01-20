@@ -1,0 +1,33 @@
+<%= form_with(model: todo, html:{class: 'form-horizontal'}, local: true) do |form| %>
+  <% if todo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+
+      <ul>
+      <% todo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :title, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= form.text_field :title %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :notes, class:'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= form.text_area :notes %>
+    </div>
+  </div>
+
+  <div class="actions form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= form.submit %>
+    </div>
+  </div>
+<% end %>

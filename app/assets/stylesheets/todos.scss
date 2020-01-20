@@ -1,0 +1,11 @@
+// Place all the styles related to the Todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar {
+  background-color: black;
+  font-style: italic;
+  margin-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 777
+}
