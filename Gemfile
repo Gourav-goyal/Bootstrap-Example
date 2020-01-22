@@ -64,3 +64,4 @@ gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'pg'
 gem 'devise'
+gem 'letter_opener', :group => :development

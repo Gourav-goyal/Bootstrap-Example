@@ -12,8 +12,10 @@
 #img{
   width: 100%;
   height: 100%;
-  background-image: url(/assets/123.jpeg);
+  background-color: bisque;
+  // background-image: url(<%= asset_path '11.jpeg' %>);
 }
+
 .col-xs-3{
   margin-top: 15px;
 }
@@ -41,7 +43,8 @@ border-radius: 5px
   color: white!important;
 }
 .imgcontainer{
-  background-image: url(/assets/11.jpeg);
+  // background-image: url(/assets/11.jpeg);
+  background-color: coral;
   height: 450px;
   display: -webkit-flex;
    align-items: center;
@@ -52,4 +55,7 @@ border-radius: 5px
 .welcome{
   color: black;
   margin-top: 50px;
+}
+#myModal{
+  color: green;
 }

@@ -17,4 +17,28 @@
 
   <%= link_to 'Edit', edit_todo_path(@todo) %> |
   <%= link_to 'Back', todos_path %>
+
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="todo-<%= @todo.id %>-label" aria-hidden="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="todo-<%= @todo.id %>-label"> Notes</h4>
+      </div>
+      <div class="modal-body">
+      <h5>Todo successfully created</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
